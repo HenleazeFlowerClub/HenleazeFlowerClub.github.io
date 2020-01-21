@@ -1,0 +1,26 @@
+@import "sizes";
+
+.game-details {
+
+  div {
+    display: flex;
+    align-items: center;
+
+    img {
+      max-width: 50%;
+      margin: @default-padding
+    }
+  }
+
+}
+
+
+@media (max-width: 1000px) {
+  .game-details {
+
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

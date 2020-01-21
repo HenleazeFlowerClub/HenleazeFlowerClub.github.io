@@ -1,0 +1,60 @@
+@import "colours";
+@import "fonts";
+@import "sizes";
+
+@import "header";
+@import "drengerillaz";
+@import "game-dev";
+@import "bio";
+@import "index";
+
+html {
+  min-height: 100%;
+}
+
+body {
+  background-color: @sky;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
+
+.main-body {
+  font-family: @body-font;
+  color: black;
+  max-width: @main-body-width;
+  margin-left: auto;
+  margin-right: auto;
+
+  p {
+    font-size: large;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  a {
+    color: black;
+
+    &:visited {
+      color: black;
+    }
+  }
+}
+
+
+@media (max-width: 1000px) {
+
+  .main-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img, &>p, &>ul, &>div {
+      max-width: 80%;
+    }
+  }
+}
+
