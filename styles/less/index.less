@@ -4,10 +4,11 @@
 
 .index-carousel {
   height: @header-height * 2;
+  max-width: @main-body-width;
+  margin: auto;
   border-bottom: 4px solid @light-grey;
+  border-right: 4px solid @light-grey;
+  border-left: 4px solid @light-grey;
   overflow: hidden;
-  .carousel-item {
-    display: flex;
-    align-items: center;
-  }
+  margin-bottom: @default-padding;
 }
