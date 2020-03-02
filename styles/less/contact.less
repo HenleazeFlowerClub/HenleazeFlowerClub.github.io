@@ -1,0 +1,27 @@
+@import "colours";
+@import "fonts";
+@import "sizes";
+
+.address-content {
+    display: flex;
+    height: 200px;
+
+    .address-text {
+        width: 49%;
+    }
+}
+
+.committee {
+    .title-and-name {
+        display: flex;
+        justify-content: space-between;
+        width: @main-body-width * 2 / 3;
+
+        .title {
+            align-self: start;
+        }
+        .name{
+            align-self: end;
+        }
+    }
+}

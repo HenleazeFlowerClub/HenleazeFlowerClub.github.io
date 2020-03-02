@@ -5,6 +5,7 @@
 @import "header";
 @import "events";
 @import "membership";
+@import "contact";
 @import "index";
 
 html {
@@ -25,6 +26,11 @@ body {
   max-width: @main-body-width;
   margin-left: auto;
   margin-right: auto;
+  padding: 1em;
+
+  .content-block {
+      margin-top: @default-padding;
+  }
 
   h2, h3 {
     color: @light-grey;
